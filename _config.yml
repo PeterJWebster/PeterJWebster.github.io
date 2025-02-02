@@ -1,0 +1,9 @@
+# Site settings
+title: Peter Webster's Portfolio
+author:
+  name: Peter Webster
+  email: peter@websteruk.com
+description: "Peter Webster's Porfolio"
+
+# Build settings
+remote_theme: jekyll/minimal
