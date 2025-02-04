@@ -505,7 +505,7 @@ footer i {
 .animated-text{
     color: #fff;
     position: absolute;
-    top: 60%;
+    top: 53%;
     left: 40%;
     transform: translate(-505,-50%);
     background: var(--main-red);
