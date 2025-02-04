@@ -124,6 +124,21 @@ img {
     margin-right: 2rem;
 }
 
+.header {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    color: white; /* Adjust color to match your design */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+
+.name {
+    display: flex;
+    margin-left: 2rem;
+}
+
 @media (max-width: 28.75em) {
     .nav {
         justify-content: center;
@@ -155,6 +170,7 @@ img {
     height: 100vh;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    padding: 20px;
 }
 
 .welcome-section > p {
@@ -454,59 +470,11 @@ footer i {
     }
 }
 
-#rollsign {
-    font-size: 4rem; /* Increase font size */
-    font-weight: 400;
-    color: white;
-    min-height: 50px;
-    opacity: 0;
-    position: relative; /* Allow absolute positioning for sliding effect */
-    transition: opacity 0.5s ease-in-out;
-    overflow: hidden; /* Ensure content is clipped to the container */
-    width: 100%;
-    text-align: center;
-    line-height: 1.4;
-}
-
-/* Roll-in animation */
-@keyframes roll-in {
-    0% {
-        transform: translateY(-100%); /* Start from above the container */
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0); /* Slide into view */
-        opacity: 1;
-    }
-}
-
-/* Roll-out animation */
-@keyframes roll-out {
-    0% {
-        transform: translateY(0); /* Start at normal position */
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100%); /* Slide out to the bottom */
-        opacity: 0;
-    }
-}
-
-.roll-in {
-    animation: roll-in 1s ease-out forwards; /* Apply roll-in */
-}
-
-.roll-out {
-    animation: roll-out 1s ease-out forwards; /* Apply roll-out */
-}
-
 /* Adjusted font-size and transitions for smoother appearance */
 
 .animated-text{
     color: #fff;
-    position: absolute;
-    top: 54%;
-    left: 37%;
+    position: relative;
     transform: translate(-505,-50%);
     background: var(--main-red);
     padding: 0 40px;
@@ -551,4 +519,14 @@ footer i {
     100%{
         margin-top:0px
     }
+}
+
+.profile-image {
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    border-radius: 20%; /* Makes it circular */
+    object-fit: cover; /* Ensures proper cropping */
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the image and adds spacing below */
+    margin-top: 70px;
 }
